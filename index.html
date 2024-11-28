@@ -3,134 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>User Profile Card</title>
-    <style>
-      /* General body styling */
-      body {
-        background-color: #111;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-        margin: 0;
-        font-family: Arial, sans-serif;
-      }
-
-      /* Card styling */
-      .card {
-        background-color: #2d2d2d;
-        padding: 2rem;
-        border-radius: 1rem;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-        text-align: center;
-        width: 90%; /* Responsive for small screens */
-        max-width: 350px;
-        color: #fff;
-        box-sizing: border-box;
-      }
-
-      /* Profile image styling */
-      .profile-img {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        border: 2px solid #4a4a4a;
-        margin: 0 auto;
-      }
-
-      /* Name styling */
-      .name {
-        margin-top: 1rem;
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: #fff;
-      }
-
-      /* Location styling */
-      .location {
-        color: #7aff70;
-        font-size: 0.9rem;
-        font-weight: bold;
-        margin-top: 0.5rem;
-      }
-
-      /* Description styling */
-      .description {
-        color: #a1a1a1;
-        margin-top: 1rem;
-        font-style: italic;
-      }
-
-      /* Button container */
-      .buttons {
-        margin-top: 1.5rem;
-      }
-
-      /* Individual button styling */
-      .button {
-        display: block;
-        background-color: #3a3a3a;
-        color: #fff;
-        text-decoration: none;
-        padding: 0.75rem;
-        margin: 0.5rem 0;
-        border-radius: 0.5rem;
-        transition: background-color 0.3s ease, transform 0.3s ease;
-      }
-
-      /* Hover effect for buttons */
-      .button:hover {
-        background-color: #7aff70;
-        color: #000; /* Change text color for contrast */
-        transform: translateY(-2px);
-        box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
-      }
-
-      /* Active state for mobile (touch feedback) */
-      .button:active {
-        background-color: #4a4a4a;
-        transform: translateY(2px);
-        box-shadow: none;
-      }
-
-      /* Responsive design */
-      @media (min-width: 768px) {
-        .card {
-          max-width: 400px;
-        }
-
-        .profile-img {
-          width: 100px;
-          height: 100px;
-        }
-
-        .name {
-          font-size: 1.75rem;
-        }
-
-        .button {
-          font-size: 1rem;
-          padding: 1rem;
-        }
-      }
-    </style>
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="card">
-      <img
-        src="assets/images/avatar-jessica.jpeg"
-        alt="Jessica Randal Profile Image"
-        class="profile-img"
-      />
-      <h2 class="name">Jessica Randall</h2>
-      <p class="location">London, United Kingdom</p>
-      <p class="description">"Front-end developer and avid reader."</p>
-      <div class="buttons">
-        <a href="#" class="button">GitHub</a>
-        <a href="#" class="button">Frontend Mentor</a>
-        <a href="#" class="button">LinkedIn</a>
-        <a href="#" class="button">Twitter</a>
-        <a href="#" class="button">Instagram</a>
+    <div class="card-container">
+      <div class="card">
+        <img
+          src="assets\images\avatar-jessica.jpeg"
+          alt="Profile Picture"
+          class="profile-pic"
+        />
+        <div class="name-location">
+          <h2 class="name">Jessica Randall</h2>
+          <p class="location">London, United Kingdom</p>
+        </div>
+        <p class="description">"Front-end developer and avid reader."</p>
+        <div class="links">
+          <button class="btn">GitHub</button>
+          <button class="btn">Frontend Mentor</button>
+          <button class="btn">LinkedIn</button>
+          <button class="btn">Twitter</button>
+          <button class="btn">Instagram</button>
+        </div>
       </div>
     </div>
   </body>
